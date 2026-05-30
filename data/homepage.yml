@@ -1,0 +1,75 @@
+#################### Banner #####################
+banner:
+  enable : true
+  title : "La Dolce Vita. In Every Pour."
+  content : "A quiet corner of old Milan hidden in the heart of the city. Step inside for classic Italian espresso, timeless jazz, and the art of slow living."
+  image : "images/coffee/banner/banner.webp"
+  button:
+    enable : true
+    label : "EXPLORE THE MENU"
+    link : "#products"
+
+#################### Mission #####################
+mission:
+  enable : true
+  title : "Honoring the Ritual of Classic Espresso"
+  section : "IL NOSTRO RITUALE"
+  content : "We believe coffee isn't a quick morning fuel—it is a daily ritual. We bring the traditional, uncompromising standards of historic Italian espresso bars to a sophisticated space. No over-roasted beans, no rushed rush-hour chaos; just perfectly pulled shots, house-baked pastries, and meaningful conversation."
+  video_thumb: "images/coffee/mission/yt-thumb.jpg"
+  background_image: "images/coffee/mission/mission.jpg"
+  video_id: "fFF68IeDdUU"
+
+#################### Vision #####################
+vision:
+  enable : true
+  section : "THE EXPERIENCE"
+  vision_item:
+  - title : "The Italian Roast Standard"
+    image : "images/coffee/vision/coffee_bean.jpg"
+    content : "Sourcing exceptional beans roasted to a rich, velvety dark-medium profile. Expect deep notes of cocoa, toasted hazelnut, and zero bitterness."
+    
+  - title : "Old-World Sanctuary"
+    image : "images/coffee/vision/cafe.jpg"
+    content : "Designed with low, warm ambient lighting, rich mahogany accents, and a strictly curated vinyl soundtrack to offer an elite, quiet refuge."
+    
+  - title : "Pasticceria Tradition"
+    image : "images/coffee/vision/bake.jpg"
+    content : "Every single biscotti, cornetto, and tiramisu is baked in-house daily using authentic recipes passed down through generations."
+
+#################### product ####################
+product:
+  enable : true
+  section : "IL MENU"
+  title : "Simplicity Refined"
+  content : "We specialize in the timeless classics. No complicated syrups or chemical flavorings—just milk, water, and perfectly extracted espresso executed with absolute mastery."
+  product_item:
+  - title : "The Espresso Bar Classics"
+    image : "images/coffee/product/espresso_bar_classics_re.jpg"
+    content : "Perfectly balanced Ristrettos, velvety silk Macchiatos, and traditional 6oz Cappuccinos served in warm porcelain cups with a glass of sparkling water."
+    project_url : "#"
+    
+  - title : "The Signature Affogato"
+    image : "images/coffee/product/alf_t.jpg"
+    content : "A double shot of our intense, nutty house espresso poured slowly over a generous scoop of artisanal, hand-churned vanilla bean gelato."
+    project_url : "#"
+    
+  - title : "Artisanal Italian Pastries"
+    image : "images/coffee/product/pas_t.jpg"
+    content : "Flaky, butter-laminated Cornetti (Italian croissants) filled with rich dark chocolate, crisp almond biscotti, and our signature espresso-soaked Tiramisu."
+    project_url : "#"
+
+###################### Contact ####################
+contact:
+  enable : true
+  section : "FIND US"
+  title : "Pull Up a Velvet Stool"
+  image : "images/coffee/contact/int.jpg"
+  content : "Tucked away from the main streets, our espresso bar is open early mornings until late quiet evenings. Stop by to read your morning literature, host an intimate meeting, or simply enjoy a perfect macchiato at the bar."
+  contact_text : Visiting us? We are located at 123 Espresso Lane, Milan, Italy. Open daily from 7am to 10pm. For private events and reservations, please contact us at (555) 123-4567 or email us at
+
+################### call to action #################
+call_to_action:
+  enable : true
+  title : "Looking for an exclusive space to host a private tasting, book club, or intimate gathering? <br>Click below to reserve our boutique lounge room."
+  button_label : "Reserve a Table"
+  button_link : "#contact"

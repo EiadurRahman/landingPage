@@ -1,0 +1,14 @@
+{{- $src := .Src -}}
+{{- $alt := .Alt | default "image" -}}
+{{- $class := .Class | default "" -}}
+
+{{- if $src -}}
+  {{- /* 1. Try to find the image inside the assets/ folder first */ -}}
+  {{- $asset := resources.Get $src -}}
+  
+  {{- if $asset -}}
+    <img src="{{ $asset.Permalink }}" alt="{{ $alt }}" class="{{ $class }}">
+  {{- else -}}
+    <img src="{{ $src | absURL }}" alt="{{ $alt }}" class="{{ $class }}">
+  {{- end -}}
+{{- end -}}
