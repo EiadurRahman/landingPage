@@ -6,4 +6,4 @@
   command = "npm run project-setup && hugo build"  # Build command
 
 [build.environment]
-  HUGO_VERSION = "0.160.2"  # Use the latest Hugo version
+  HUGO_VERSION = "0.147.0"  # Use the latest Hugo version
