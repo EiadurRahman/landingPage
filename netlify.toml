@@ -1,0 +1,39 @@
+[build]
+  # Runs the project setup and builds the site using the npm script
+  command = "npm run project-setup && hugo --gc --minify"
+  # Hugo outputs by default to the "public" directory
+  publish = "public"
+
+[build.environment]
+  # Pins the specific minimum Hugo version required by your theme
+  HUGO_VERSION = "0.147.2"
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  # For preview deploys, we build with draft/future posts enabled
+  command = "npm run project-setup && hugo --buildDrafts --buildFuture"
+
+[[headers]]
+  # Since "Caching enabled" is a key feature, this optimizes asset delivery
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  # Cache long-lived static assets (images, fonts, bundles) aggressively
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
