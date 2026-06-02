@@ -11,6 +11,11 @@
 			width: 70%;
 			margin-left: auto;
 
+			@include mobile {
+				width: 100%;
+				margin-left: 0;
+			}
+
 			img {
 				width: 100%;
 			}
@@ -43,8 +48,13 @@
 			}
 
 			@include mobile {
-				top: 0;
+				position: relative; // ADD
+				top: auto; // ADD
+				left: auto; // ADD
+				padding: 20px 16px; // ADD — gives breathing room
+				width: 100%; // ADD
 			}
+
 
 			h2 {
 				font-weight: 600;
@@ -68,6 +78,12 @@
 					font-size: 35px;
 					line-height: 40px;
 				}
+
+				// ADD THIS:
+				@include mobile {
+					font-size: 28px;
+					line-height: 34px;
+				}
 			}
 
 			h3 {
@@ -86,6 +102,11 @@
 					font-size: 16px;
 					letter-spacing: 1px;
 					margin-bottom: 30px;
+				}
+
+				@include mobile {
+					font-size: 14px;
+					margin-bottom: 20px;
 				}
 			}
 
@@ -106,6 +127,7 @@
 					padding: 15px 25px;
 				}
 			}
+
 			.hero-btn:hover {
 				background: rgba(255, 255, 255, 0.63);
 				color: $text-color-dark;
